@@ -1,0 +1,143 @@
+:root {
+	--scheme-primary: #f29559;
+	--scheme-secondary: #f2d492;
+	--scheme-tertiary: #b8b08d;
+	--scheme-fortuary: #283845;
+}
+* {
+	box-sizing: border-box;
+}
+body {
+	background: var(--scheme-fortuary);
+	color: white;
+	padding-top: 70px;
+	font-family: Tahoma, Sans-Serif;
+}
+.round {
+	border-radius: 25px;
+}
+.glass {
+	background: #9994;
+	backdrop-filter: blur(10px);
+}
+.noborder {
+	border: none;
+}
+.glassborder {
+	border: 1px solid #ffffff1a;
+}
+.navi {
+	display: flex;
+	overflow: hidden;
+	width: 89%;
+	height: 50px;
+	position: fixed;
+	top: 10px;
+	left: 50%;
+	translate: -50%;
+	transition: all 0.35s ease;
+}
+.navi:active {
+	border-radius: 5px;
+	width: 92%;
+}
+.n_b {
+	background: none;
+	width: 50px;
+	height: 50px;
+}
+.n_b.left {
+	position: absolute;
+	left: 0;
+}
+.n_b.right {
+	position: absolute;
+	right: 0;
+}
+.n_t {
+	position: absolute;
+	left: 50%;
+	translate: -50%;
+}
+.centerbox {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	translate: -50% -50%;
+	width: 90%;
+	text-align: center;
+}
+.title {
+	font-size: 40px;
+}
+#s_box {
+	display: flex;
+	position: absolute;
+	left: 50%;
+	translate: -50%;
+	gap: 4px;
+}
+#s_in,
+#s_bu {
+	color: white;
+	outline: none;
+	height: 50px;
+	flex-shrink: 0;
+	font-size: 16px;
+	scale: 1;
+	transition: all 0.3s ease;
+}
+#s_in:active,
+#s_bu:active {
+	scale: 0.9;
+	border-radius: 5px;
+}
+#s_in {
+	width: 220px;
+	padding: 10px;
+}
+#s_in:active {
+	width: 245px;
+}
+#s_bu:active {
+	width: 80px;
+}
+#s_bu {
+	width: 60px;
+	padding: 10px;
+}
+.window {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	translate: -50% -50%;
+	width: 320px;
+	height: 450px;
+	background: #001;
+	z-index: 500;
+	border-radius: 20px;
+	padding: 15px;
+	transform-origin: center;
+	overflow: auto;
+	overflow-x: hidden;
+	transition: all 0.45s ease;
+	text-align: center;
+}
+.window.hidden {
+	opacity: 0;
+	border-radius: 500px;
+	pointer-events: none;
+	transform: scale(0.05);
+}
+#close_settings{
+	position: absolute;
+	bottom: 5px;
+	left: 50%;
+	translate: -50%;
+	height: 30px;
+	width: 100px;
+}
+select{
+	width: 100px;
+	height: 30px;
+}

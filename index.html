@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>DracoNexus</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+	</head>
+	<body>
+		<nav class="round glass navi">
+			<button class="n_b left glassborder" id="s_icon">
+				<i class="fa-solid fa-gear"></i>
+			</button>
+			<p class="n_t">Search</p>
+			<button class="n_b right glassborder">
+				<i class="fa-solid fa-bars"></i>
+			</button>
+		</nav>
+		<div class="centerbox">
+			<h2 class="title">DracoNexus</h2>
+			<form id="s_box">
+				<input type="text" id="s_in" class="round glass noborder" placeholder="I want to search..." required/>
+				<button type="submit" id="s_bu" class="round glass noborder">Search</button>
+			</form>
+		</div>
+		<section id="w_settings" class="window hidden">
+			<h2>Settings</h2>
+			<label for="s_engine">Search Engine</label>
+			<select id="s_engine">
+				<option value="ggl">Google</option>
+				<option value="stp">StartPage</option>
+				<option value="brv">Brave</option>
+				<option value="eco">Ecosia</option>
+				<option value="bng">Bing</option>
+			</select>
+			<hr />
+			<button id="close_settings" class="noborder round">Close</button>
+		</section>
+		<script src="main.js"></script>
+	</body>
+</html>
